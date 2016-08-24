@@ -25,7 +25,7 @@ En caso de querer hacer modificaciones al proyecto, realice la instalación y te
 
 <ul>
 <li>Tener instalado Ruby en su computador para hacer cambios en el archivo <code>.SCSS</code>.</li>
-<li>Tener instalado bower en caso de querer actualizar, modificar o adicionar alguna libreria de JavaScript</li>
+<li>Tener instalado bower en caso de querer actualizar, modificar o adicionar alguna libreria de JavaScript.</li>
 </ul>
 
 
