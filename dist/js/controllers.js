@@ -66,8 +66,21 @@ palabrassasApp.controller ('lecciones' , function ($scope, $firebaseArray){
 
 });
 
-palabrassasApp.controller ('vocabulario' , function ($scope){
+palabrassasApp.controller ('vocabulario' , function ($scope, $http){
 	
+	$http.get('js/vocabulario.json')
+	.then(function(res){
+		$scope.palabras = res.data;
+	});
 	
+	$scope.abrirNav = function() {
+		document.getElementById("mySidenav").style.width = "250px";	
+		document.getElementById("static").style.marginLeft = "250px";
+		
+	}
+	$scope.cerrarNav = function(){
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("static").style.marginLeft= "0";	
+	}
 	
 })
