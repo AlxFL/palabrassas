@@ -1,0 +1,34 @@
+@media screen and (max-width: 1960px) and (min-width: 960px) {
+
+/*=============================GUIA=============================*/
+	.slide{
+		&-img{
+			max-width: 440px;
+			margin-top : 85px;
+		}
+		
+		&-textos{
+			margin-top : -280px;
+		}
+		
+		&-h{
+			font-size: 40px;
+			padding-bottom : 20px;
+		}
+		
+		&-p{
+			font-size: 20px;
+		}
+	}
+	
+/*=============================LECCIONES=============================*/
+	.tarjeta{
+		
+		img{
+			margin-top: 5px;
+			margin-left : -220px;
+		}
+		
+	}
+	
+}

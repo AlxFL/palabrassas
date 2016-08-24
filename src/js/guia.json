@@ -1,0 +1,19 @@
+[
+
+	{
+		"titulo": "Preparate en tus exámenes",
+		"descripcion": "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
+		"imagen": "prepara.png"
+	},
+	{
+		"titulo": "Zona de prácticas",
+		"descripcion": "Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.",
+		"imagen": "practicas.png"
+	},
+	{
+		"titulo": "Aprende Inglés",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. ",
+		"imagen": "aprende.png"
+	}
+  
+]
