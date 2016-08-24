@@ -1,7 +1,5 @@
 # Palabrassas
 
-<h2>Servidor del proyecto</h2>
-
 El proyecto se encuentra alojado en un servidor web con la siguiente dirección http://grubbe.co/palabrassas
 
 <h2>Preparando el entorno de desarrollo</h2>
