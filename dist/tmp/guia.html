@@ -1,0 +1,45 @@
+<!--
+	Slide con el contenido para conocer la app
+-->
+<div class="guia">
+
+	<!--
+		Hace suave la apertura
+	-->
+	<div class="mascara"></div>
+	
+
+	<div class="slide" ng-swipe-left="rotar(1)" ng-swipe-right="rotar(-1)" ng-repeat = "slide in slides">
+		
+		<img class="slide-img" ng-src="img/{{slide.imagen}}" alt="">
+		
+		<!--
+			Textos en la parte inferior del slide
+		-->		
+		<div class="slide-textos">
+		
+			<!--
+				Titular del slide
+			-->
+			<h2 class="slide-h">{{slide.titulo}}</h2>
+
+			<!--
+				Parráfo de prueba
+			-->
+			<p class="slide-p">
+				{{slide.descripcion}}
+			</p>
+			
+			<ul class="slide-indicador inline">
+				<li class="indicador-2">●</li>
+				<li class="indicador-0">●</li>
+				<li class="indicador-1">●</li>
+			</ul>					
+			
+		</div>
+		<button class="slide-boton" onclick="location.href='#/lecciones'">COMENZAR AHORA</button>
+		
+	</div>
+	
+
+</div>
