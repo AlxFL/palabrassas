@@ -16,7 +16,7 @@ palabrassasApp.config (['$routeProvider', function($routeProvider){
 	})
 	.when ('/vocabulario', {
 		templateUrl : 'tmp/vocabulario.html',
-		controller : 'lecciones'
+		controller : 'vocabulario'
 	})	
 	.when ('/404' , {
 		templateUrl : 'tmp/404.html',

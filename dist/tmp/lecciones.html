@@ -13,11 +13,8 @@
 	</div>
 	
 	<h2 class="nombre">Nombre del usuario</h2>
-	<hr>
 	
 	<ul class="sidenav-menu">
-		<li onclick="location.href='#/lecciones'">Lecciones</li>
-		<li onclick="location.href='#/vocabulario'">Vocabulario</li>
 	</ul>
 	
 </div>
@@ -30,29 +27,35 @@
 
 <div class="barra">
 	<div class="nav" ng-click="abrirNav()"></div>
-	<h1>Lecciones</h1>
+	<h1>Let´s practice</h1>
+	<div class="user" ng-click="abrirNav()">&#xe971;</div>
 </div>
 
-<div id="cnt" class="contenido">
+<div class="contenido">
 
-	<div class="tarjeta" ng-repeat="leccion in lecciones">
-
-		<img ng-src="img/{{leccion.imagen}}" alt="">
-
-		<h1>{{leccion.titulo}}</h1>
-
-		<p>
-			{{leccion.descripcion | limitTo : 55}}
-			{{leccion.descripcion.length > 55 ? '&hellip;' : ''}}
-		</p>
-
-		<ul class="inline">
-			<li class="tarjeta-i">&#xe906;</li>
-			<li class="tarjeta-i">&#xe91e;</li>
-			<li class="tarjeta-i">&#xe96d;</li>
-			<li class="tarjeta-i">&#xe915;</li>
-		</ul>	
+	<div class="margen">
+			
+		<ul class="items-l">
+			<li>Pronunciation</li>
+			<li>Comprehension</li>
+			<li>Fluency</li>
+			<li>Interaccion</li>
+			<li>Vocabulary</li>
+			<li>Structure</li>
+		</ul>
+		
 	</div>
+	
+	<div class="btn-l">
+		<button>
+			&#xe94e; i Quick test
+		</button>
+		
+		<button>
+			&#xe9d2; Final test
+		</button>
+	</div>
+	
 </div>
 
 

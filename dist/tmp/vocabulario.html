@@ -13,11 +13,8 @@
 	</div>
 	
 	<h2 class="nombre">Nombre del usuario</h2>
-	<hr>
 	
 	<ul class="sidenav-menu">
-		<li onclick="location.href='#/lecciones'">Lecciones</li>
-		<li onclick="location.href='#/vocabulario'">Vocabulario</li>
 	</ul>
 	
 </div>
@@ -25,22 +22,26 @@
 <!--
 	Termina SideNav
 -->
-<div class="vocabulario" id="static"  ng-swipe-right="abrirNav()" ng-swipe-left="cerrarNav()">
 
-<div class="barra">
-	<div class="nav" ng-click="abrirNav()"></div>
-	<h1>Vocabulario</h1>
-</div>
-	
-	<ul>
-	
-		<li ng-repeat="palabra in palabras">{{palabra.val}}</li>
-	
-	</ul>
-	
-	<div class="explica">
-		<h1>Explicación</h1>
-		<h1>Imagen</h1>
+<div id="static" ng-swipe-right="abrirNav()" ng-swipe-left="cerrarNav()">
+
+	<div class="barra">
+		<div class="nav" ng-click="abrirNav()"></div>
+		<h1>ICAO Alphabet</h1>
+		<div class="user" ng-click="abrirNav()">&#xe971;</div>
 	</div>
+
+	<div class="contenido">
+
+		<div class="margen">
+		
+			<ul class ="items-v">
+				<li ng-repeat="palabra in palabras">{{palabra.val}}</li>
+			</ul>
+
+		</div>
+
+	</div>
+
 
 </div>

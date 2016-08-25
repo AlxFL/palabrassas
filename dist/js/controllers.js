@@ -48,11 +48,7 @@ palabrassasApp.controller ('guia' , function ($scope, $http){
 	
 });
 
-palabrassasApp.controller ('lecciones' , function ($scope, $firebaseArray){
-	
-	var ref = new Firebase ('https://palabrassas.firebaseio.com/');
-	$scope.lecciones = $firebaseArray (ref);
-	console.log($scope.lecciones);
+palabrassasApp.controller ('lecciones' , function ($scope){
 	
 	$scope.abrirNav = function() {
 		document.getElementById("mySidenav").style.width = "250px";	
@@ -63,24 +59,11 @@ palabrassasApp.controller ('lecciones' , function ($scope, $firebaseArray){
 		document.getElementById("mySidenav").style.width = "0";
 		document.getElementById("static").style.marginLeft= "0";	
 	}
-
 });
 
-palabrassasApp.controller ('vocabulario' , function ($scope, $http){
+palabrassasApp.controller ('vocabulario' , function ($scope, $firebaseArray){
 	
-	$http.get('js/vocabulario.json')
-	.then(function(res){
-		$scope.palabras = res.data;
-	});
-	
-	$scope.abrirNav = function() {
-		document.getElementById("mySidenav").style.width = "250px";	
-		document.getElementById("static").style.marginLeft = "250px";
-		
-	}
-	$scope.cerrarNav = function(){
-		document.getElementById("mySidenav").style.width = "0";
-		document.getElementById("static").style.marginLeft= "0";	
-	}
+	var ref = new Firebase ('https://palabrassas.firebaseio.com/');
+	$scope.palabras = $firebaseArray (ref);
 	
 })
