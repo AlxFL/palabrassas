@@ -66,4 +66,14 @@ palabrassasApp.controller ('vocabulario' , function ($scope, $firebaseArray){
 	var ref = new Firebase ('https://palabrassas.firebaseio.com/');
 	$scope.palabras = $firebaseArray (ref);
 	
+	$scope.abrirNav = function() {
+		document.getElementById("mySidenav").style.width = "250px";	
+		document.getElementById("static").style.marginLeft = "250px";
+		
+	}
+	$scope.cerrarNav = function(){
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("static").style.marginLeft= "0";	
+	}
+	
 })
